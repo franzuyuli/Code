@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORCHID</title>
+    <link rel="stylesheet" href="icon/icons_all.css" >
+    <style>
+        /* css reset */
+        html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { 	margin: 0; 	padding: 0; 	border: 0; 	font-size: 100%; 	font: inherit; 	vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 	display: block; } body { 	line-height: 1; } ol, ul { 	list-style: none; } blockquote, q { 	quotes: none; } blockquote:before, blockquote:after, q:before, q:after { 	content: ''; 	content: none; } table { 	border-collapse: collapse; 	border-spacing: 0; }
+        @font-face {
+            font-family:'open-sans';
+            src: url('OpenSans-Regular.ttf');
+        }
+            header {
+            width: 80% ; 
+            margin: 0px auto;
+            height: 10%;
+        }
+        .flex-container{
+            display: flex;
+            align-items: center;
+            border-bottom:#eeeeee solid 1px;
+        }
+        header div ul li{  
+            font: 14px 'open-sans';
+            font-size: 11px;
+            float: left;
+            margin:15px;
+            
+        }
+        header div ul li a{
+            text-decoration: none;
+            color:rgba(0, 0, 0, 0.6);
+            transition:color 0.5s ;
+        }
+        .heaicon{    
+            font-size:14px;
+            letter-spacing: 3px;
+            font-family: sans-serif;
+            color: #222;        
+            padding-right:20px;
+        }
+        .heaicon a{
+            text-decoration: none;
+            color: black;
+        }
+        .heaicon a:hover{
+            color:red;
+        }
+        .heasearch{
+            margin:15px;
+            font-size:14px; 
+        }
+        .busca{
+            border:none;
+        }
+        header div div li:hover{
+            color: red;
+        }
+        .bar{
+            border-left:#eeeeee solid 1px;
+        }
+        header div ul li a:hover{
+            color: red;
+        }
+        .logo_principal{
+            text-align: center;
+            padding: 40px 0;
+        }
+        
+    </style>
+</head>
+<body>
+     <header class="header_container"> 
+        <div class="flex-container">
+            <div style="flex-grow: 8;">
+                <ul class="ul_items">
+                  <li><a href="">HOME</a></li>
+                  <li><a href="">ABOUT</a></li>
+                  <li><a href="">CONTACT</a></li>
+                  <li><a href="">SHOP</a></li>
+                </ul>
+            </div>
+            <div class="heaicon" style="flex-grow:0;">
+                 <i  title="Facebook"><a href="" class="icon-facebook"></a></i>
+                 <i  title="Twitter"><a href=""class="icon-twitter"></a></i>
+                 <i  title="Instagram"><a href=""class="icon-instagram"></a></i>
+                 <i  title="Google Plus"><a href=""class="icon-google-plus1"></a></i>
+                 <i title="Bloglobin"><a href="" class="icon-heart"></a></i>
+            </div>
+            <div class="bar">
+                <div class="heasearch" style="flex-grow:0;">
+                    <i class="icon-search"></i>
+                    <input type="text" placeholder="Search...." class="busca" >
+                </div>
+            </div>
+        </div>
+        <div class="logo_principal">
+            <img src="logo_principal.png" alt="">
+        </div>
+     </header>
+   
+</body>
+</html>
